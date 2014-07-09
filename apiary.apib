@@ -4,6 +4,303 @@ HOST: http://wsdl.sync.today/api
 # Sync.Today
 Sync.Today is tasks, calendars, contacts and documents synchronization engine.
 
+# Group Accounts
+Accounts related resources of the **Sync.Today API**
+
+## Accounts Collection [/accounts]
+### List all Accounts [GET]
++ Response 200 (application/json)
+
+            [
+                  {
+                  "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+                  "IsBlocked": false,
+                  "Name_FirstName": null,
+                  "Name_Surname": null,
+                  "ContactPerson_Email": null,
+                  "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+                  "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "UpdatesPolicy":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+                  },
+                  "LastSync":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+                  },
+                  "ConnectInfo":       {
+                     "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+                     "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+                     "Username": "tester@naseukolycz.onmicrosoft.com",
+                     "Password": "v7xe+sgloF78dZqlIOaQGA==",
+                     "Server": "",
+                     "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                     "UpdatesPolicy":          {
+                        "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+                     },
+                     "LastSync":          {
+                        "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+                     },
+                     "IsBlocked": false
+                  },
+                  "ExternalId": "Empty-635403248552454115",
+                  "LastModified": "2014-07-07T08:14:15.247Z"
+               },
+                  {
+                  "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+                  "IsBlocked": false,
+                  "Name_FirstName": null,
+                  "Name_Surname": null,
+                  "ContactPerson_Email": null,
+                  "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+                  "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "UpdatesPolicy":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+                  },
+                  "LastSync":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+                  },
+                  "ConnectInfo":       {
+                     "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+                     "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+                     "Username": "tester@naseukolycz.onmicrosoft.com",
+                     "Password": "v7xe+sgloF78dZqlIOaQGA==",
+                     "Server": "",
+                     "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                     "UpdatesPolicy":          {
+                        "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                        "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+                     },
+                     "LastSync":          {
+                        "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                        "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+                     },
+                     "IsBlocked": false
+                  },
+                  "ExternalId": "Empty-635403248552454115",
+                  "LastModified": "2014-07-07T08:14:15.247Z"
+               }
+            ]
+
+### Create an Account [POST]
++ Request (application/json)
+
+            {
+               "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+               "IsBlocked": false,
+               "Name_FirstName": null,
+               "Name_Surname": null,
+               "ContactPerson_Email": null,
+               "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+               "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+               "UpdatesPolicy":    {
+                  "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+               },
+               "LastSync":    {
+                  "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+               },
+               "ConnectInfo":    {
+                  "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+                  "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+                  "Username": "tester@naseukolycz.onmicrosoft.com",
+                  "Password": "v7xe+sgloF78dZqlIOaQGA==",
+                  "Server": "",
+                  "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "UpdatesPolicy":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+                  },
+                  "LastSync":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+                  },
+                  "IsBlocked": false
+               },
+               "ExternalId": "Empty-635403248552454115",
+               "LastModified": "2014-07-07T08:14:15.247Z"
+            }
+
+
++ Response 201 (application/json)
+
+            {
+               "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+               "IsBlocked": false,
+               "Name_FirstName": null,
+               "Name_Surname": null,
+               "ContactPerson_Email": null,
+               "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+               "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+               "UpdatesPolicy":    {
+                  "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+               },
+               "LastSync":    {
+                  "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+               },
+               "ConnectInfo":    {
+                  "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+                  "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+                  "Username": "tester@naseukolycz.onmicrosoft.com",
+                  "Password": "v7xe+sgloF78dZqlIOaQGA==",
+                  "Server": "",
+                  "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "UpdatesPolicy":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+                  },
+                  "LastSync":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+                  },
+                  "IsBlocked": false
+               },
+               "ExternalId": "Empty-635403248552454115",
+               "LastModified": "2014-07-07T08:14:15.247Z"
+            }
+## Account [/accounts/{InternalId}]
+A single Account object with all its details
+
++ Parameters
+    + InternalId (required, Guid, `93bc7618-4db0-4bc2-ag1e-0244e082d141`) ... Guid `InternalId` of the Account to perform action with. Has example value.
+
+### Retrieve a Account [GET]
++ Response 200 (application/json)
+
+    + Header
+
+            X-My-Header: The Value
+
+    + Body
+
+            {
+               "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+               "IsBlocked": false,
+               "Name_FirstName": null,
+               "Name_Surname": null,
+               "ContactPerson_Email": null,
+               "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+               "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+               "UpdatesPolicy":    {
+                  "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                  "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+               },
+               "LastSync":    {
+                  "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                  "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+               },
+               "ConnectInfo":    {
+                  "InternalId": "30e7cb68-3804-4c45-806a-1457ef318183",
+                  "BelongsToUser": "93bc7618-4db0-4bc2-ac1e-0244e082d141",
+                  "Username": "tester@naseukolycz.onmicrosoft.com",
+                  "Password": "v7xe+sgloF78dZqlIOaQGA==",
+                  "Server": "",
+                  "AccountAssemblyName": "naseukolycz.universalsync.communicator.exchange, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                  "UpdatesPolicy":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0,
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": 0
+                  },
+                  "LastSync":       {
+                     "naseukolycz.universalsync.icommunicator.NuContact, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuTask, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuRecurringEvent, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.icommunicator.NuProject, naseukolycz.universalsync.icommunicator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00",
+                     "naseukolycz.universalsync.idata.NuUser, naseukolycz.universalsync.idata, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "2014-07-06T11:14:15+02:00"
+                  },
+                  "IsBlocked": false
+               },
+               "ExternalId": "Empty-635403248552454115",
+               "LastModified": "2014-07-07T08:14:15.247Z"
+            }
+            
+### Remove an Account [DELETE]
++ Response 204
+
+
 # Group Relations
 Relations related resources of the **Sync.Today API**
 
