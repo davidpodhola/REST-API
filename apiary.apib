@@ -1,0 +1,101 @@
+FORMAT: 1A
+HOST: http://wsdl.sync.today/api
+
+# Sync.Today
+Sync.Today API is a *synchronization* or *integration* service similar to ActiveSync.
+
+# Group Users
+Users related resources of the **Sync.Today API**
+
+## Users Collection [/users]
+### List all Users [GET]
++ Response 200 (application/json)
+
+        [
+          {
+          "InternalId": "dab86083-3a99-4873-8c57-eb0a648fee35",
+          "Created": "2014-05-26T12:56:37Z",
+          "IsBlocked": false,
+          "Maintenance": -1,
+          "FirstName": "Jan",
+          "LastName": "Krb",
+          "Email": "jan.krb@naseukoly.cz",
+          "Password": "10:AAA:BBB",
+          "EventsInRelation": {},
+          "BelongsToUser": "00000000-0000-0000-0000-000000000000"
+           },
+              {
+              "InternalId": "61fb446d-9a68-95e7-6104-75eaf0a6c8a6",
+              "Created": "2014-07-07T11:15:19.207Z",
+              "IsBlocked": false,
+              "Maintenance": -1,
+              "FirstName": null,
+              "LastName": null,
+              "Email": "0",
+              "Password": "13:UUU:WWW",
+              "EventsInRelation": {},
+              "BelongsToUser": "00000000-0000-0000-0000-000000000000"
+        }]
+
+### Create a User [POST]
++ Request (application/json)
+
+        {
+           "InternalId": "93bc7618-4db0-4bc2-ag1e-0244e082d141",
+           "Created": "2014-06-07T08:14:14Z",
+           "IsBlocked": false,
+           "Maintenance": 0,
+           "FirstName": "John",
+           "LastName": "Rambo",
+           "Email": "a@b.cz",
+           "Password": "10:EJYnWHc:TxnQDjW1",
+           "EventsInRelation": {},
+           "BelongsToUser": "00000000-0000-0000-0000-000000000000"
+        }
+
+
++ Response 201 (application/json)
+
+        {
+           "InternalId": "93bc7618-4db0-4bc2-ag1e-0244e082d141",
+           "Created": "2014-06-07T08:14:14Z",
+           "IsBlocked": false,
+           "Maintenance": 0,
+           "FirstName": "John",
+           "LastName": "Rambo",
+           "Email": "a@b.cz",
+           "Password": "10:EJYnWHc:TxnQDjW1",
+           "EventsInRelation": {},
+           "BelongsToUser": "00000000-0000-0000-0000-000000000000"
+        }
+
+## User [/users/{id}]
+A single User object with all its details
+
++ Parameters
+    + id (required, guid, `93bc7618-4db0-4bc2-ag1e-0244e082d141`) ... Guid `id` of the User to perform action with. Has example value.
+
+### Retrieve a User [GET]
++ Response 200 (application/json)
+
+    + Header
+
+            X-My-Header: The Value
+
+    + Body
+
+            {
+               "InternalId": "93bc7618-4db0-4bc2-ag1e-0244e082d141",
+               "Created": "2014-06-07T08:14:14Z",
+               "IsBlocked": false,
+               "Maintenance": 0,
+               "FirstName": "John",
+               "LastName": "Rambo",
+               "Email": "a@b.cz",
+               "Password": "10:EJYnWHc:TxnQDjW1",
+               "EventsInRelation": {},
+               "BelongsToUser": "00000000-0000-0000-0000-000000000000"
+            }
+            
+### Remove a User [DELETE]
++ Response 204
