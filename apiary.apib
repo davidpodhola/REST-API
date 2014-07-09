@@ -332,11 +332,11 @@ Relations related resources of the **Sync.Today API**
                "UserId": 1
             }
 
-## Relation [/relations/{id}]
+## Relation [/relations/{InternalId}]
 A single Relation object with all its details
 
 + Parameters
-    + id (required, int, `93bc7618-4db0-4bc2-ag1e-0244e082d141`) ... Int `id` of the Relation to perform action with. Has example value.
+    + InternalId (required, Guid, `93bc7618-4db0-4bc2-ag1e-0244e082d141`) ... Guid `InternalId` of the Relation to perform action with. Has example value.
 
 ### Retrieve a Relation [GET]
 + Response 200 (application/json)
@@ -421,11 +421,11 @@ Users related resources of the **Sync.Today API**
            "BelongsToUser": "00000000-0000-0000-0000-000000000000"
         }
 
-## User [/users/{id}]
+## User [/users/{InternalId}]
 A single User object with all its details
 
 + Parameters
-    + id (required, guid, `93bc7618-4db0-4bc2-ag1e-0244e082d141`) ... Guid `id` of the User to perform action with. Has example value.
+    + InternalId (required, guid, `93bc7618-4db0-4bc2-ag1e-0244e082d141`) ... Guid `InternalId` of the User to perform action with. Has example value.
 
 ### Retrieve a User [GET]
 + Response 200 (application/json)
