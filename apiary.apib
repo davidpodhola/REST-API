@@ -4,6 +4,61 @@ HOST: http://wsdl.sync.today/api
 # Sync.Today
 Sync.Today API is a *synchronization* or *integration* service similar to ActiveSync.
 
+# Group Relations
+Relations related resources of the **Sync.Today API**
+
+## Relations Collection [/relations]
+### List all Relations [GET]
++ Response 200 (application/json)
+
+            [{
+               "Id": 2,
+               "InternalId": "65299bb8-aa80-473e-bce1-0850fe34b785",
+               "UserId": 1
+            }]
+
+### Create a Relation [POST]
++ Request (application/json)
+
+            {
+               "Id": 2,
+               "InternalId": "65299bb8-aa80-473e-bce1-0850fe34b785",
+               "UserId": 1
+            }
+
+
++ Response 201 (application/json)
+
+            {
+               "Id": 2,
+               "InternalId": "65299bb8-aa80-473e-bce1-0850fe34b785",
+               "UserId": 1
+            }
+
+## Relation [/relations/{id}]
+A single Relation object with all its details
+
++ Parameters
+    + id (required, guid, `93bc7618-4db0-4bc2-ag1e-0244e082d141`) ... Guid `id` of the User to perform action with. Has example value.
+
+### Retrieve a Relation [GET]
++ Response 200 (application/json)
+
+    + Header
+
+            X-My-Header: The Value
+
+    + Body
+
+            {
+               "Id": 2,
+               "InternalId": "65299bb8-aa80-473e-bce1-0850fe34b785",
+               "UserId": 1
+            }
+            
+### Remove a Relation [DELETE]
++ Response 204
+
 # Group Users
 Users related resources of the **Sync.Today API**
 
