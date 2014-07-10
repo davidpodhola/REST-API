@@ -520,5 +520,70 @@ A single User object with all its details
          "LastModified": "2014-07-07T12:52:38.537Z"
          }]
 
+### Create a NuTask [POST]
++ Request (application/json)
+
+        {
+         "Subject": "created by rest",
+         "Body": "created by rest",
+         "StartDate": "2014-02-26T13:00:00Z",
+         "DueDate": "2014-02-28T15:00:00Z",
+         "Reminder": "2014-07-10T13:45:00Z",
+         "Priority": 0,
+         "IsPrivate": true,
+         "Company": "fewf",
+         "Completed": true,
+         "ProjectName": "?",
+         "Parents": [{
+                 "Subject": "created by rest",
+                 "Body": "created by rest",
+                 "StartDate": "2014-07-07T14:52:38.537",
+                 "DueDate": "2014-07-07T14:52:38.537",
+                 "Reminder": "2014-07-07T14:52:38.537",
+                 "Priority": 0,
+                 "IsPrivate": true,
+                 "Company": "created by rest",
+                 "Completed": true,
+                 "ProjectName": "created by rest",
+                 "Parents": [],
+                 "ExternalId": "pe28ef3d-f47d-4468-be0f-e82ca1d6543e",
+                 "LastModified": "2014-07-07T14:52:38.537"
+             }],
+         "ExternalId": "pe28ef3d-f47d-4468-be0f-e82ca1d6543e",
+         "LastModified": "2014-07-07T12:52:38.537Z"
+         }
+
+
++ Response 201 (application/json)
+        
+        {
+         "Subject": "created by rest",
+         "Body": "created by rest",
+         "StartDate": "2014-02-26T13:00:00Z",
+         "DueDate": "2014-02-28T15:00:00Z",
+         "Reminder": "2014-07-10T13:45:00Z",
+         "Priority": 0,
+         "IsPrivate": true,
+         "Company": "fewf",
+         "Completed": true,
+         "ProjectName": "?",
+         "Parents": [{
+                 "Subject": "created by rest",
+                 "Body": "created by rest",
+                 "StartDate": "2014-07-07T14:52:38.537",
+                 "DueDate": "2014-07-07T14:52:38.537",
+                 "Reminder": "2014-07-07T14:52:38.537",
+                 "Priority": 0,
+                 "IsPrivate": true,
+                 "Company": "created by rest",
+                 "Completed": true,
+                 "ProjectName": "created by rest",
+                 "Parents": [],
+                 "ExternalId": "pe28ef3d-f47d-4468-be0f-e82ca1d6543e",
+                 "LastModified": "2014-07-07T14:52:38.537"
+                 }],
+         "ExternalId": "1028ef3d-f47d-4468-be0f-e82ca1d6543e",
+         "LastModified": "2014-07-07T12:52:38.537Z"
+         }
 
 
