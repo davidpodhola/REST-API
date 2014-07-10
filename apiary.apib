@@ -355,6 +355,7 @@ A single Relation object with all its details
             }
             
 ### Remove a Relation [DELETE]
+### Remove an Account [DELETE]
 + Response 204
 
 # Group Users
@@ -547,6 +548,35 @@ Returns the NuTask entity by its ExternalId.
           "LastModified": "2014-07-07T12:52:38.537Z"
          }
 
+### Update NuTask [PUT]
+No value returns. Updates entity.
++ Request (application/json)
+
+        {
+         "Subject": "sample rest0002",
+         "Body": "created by rest",
+         "StartDate": "2014-02-26T13:00:00Z",
+         "DueDate": "2014-02-28T15:00:00Z",
+         "Reminder": "2014-07-10T13:45:00Z",
+         "Priority": 0,
+         "IsPrivate": true,
+         "Company": "fewf",
+         "Completed": true,
+         "ProjectName": "?",
+         "Parents": [],
+         "ExternalId": "2028ef3d-f47d-4468-be0f-e82ca1d6543e",
+         "LastModified": "2014-07-07T12:52:38.537Z"
+         }
+
+
++ Response 200
+
+### Delete NuTask [DELETE]
+No returns value. Deletes entity.
+ + Response 204
+
+
+
 ## NuTask [/nutask{?accountId}]
 Creating NuTask.
 
@@ -592,5 +622,9 @@ Creating NuTask.
          "ExternalId": "2028ef3d-f47d-4468-be0f-e82ca1d6543e",
          "LastModified": "2014-07-07T12:52:38.537Z"
          }
+
+
+
+
 
 
