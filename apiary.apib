@@ -523,13 +523,13 @@ Returns all NuTask entities from database.
          }]
          
 ## NuTask  [/nutask{?id,accountId}]
-Returns the NuTask entity by its ExternalId.
 
 + Parameters
     + id (required, string) ... This parameter is ExternalId of entity (NuTask).
     + accountId (required, string) ... Entity belongs to account. This parameter is important because in database can be more entities with same ExternalId. 
 
-### Retrieve NuTask by externalId [GET]
+### Get NuTask by ID [GET]
+Returns NuTask by ExternalId and AccountId.
 + Response 200 (application/json)
 
          {
@@ -573,19 +573,19 @@ No value returns. Updates entity.
 
 ### Delete NuTask [DELETE]
 No returns value. Deletes entity.
+
  + Response 204
 
 
 
 ## NuTask [/nutask{?accountId}]
-Creating NuTask.
 
 + Parameters
     + accountId (required, string) ... You must specify accountId because in database can be entities with same externalId.
    
 
 ### Create a NuTask [POST]
-
+Creating NuTask.
 + Request (application/json)
 
         {
