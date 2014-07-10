@@ -547,12 +547,15 @@ Returns the NuTask entity by its ExternalId.
           "LastModified": "2014-07-07T12:52:38.537Z"
          }
 
-## NuTask [/nutask?accountId={InternalId}]
+## NuTask [/nutask{?accountId}]
+Creating NuTask.
 
 + Parameters
-    + `accountId` You must specify accountId because in database can be entities with same externalId.
-    
+    + accountId (required, string) ... You must specify accountId because in database can be entities with same externalId.
+   
+
 ### Create a NuTask [POST]
+
 + Request (application/json)
 
         {
