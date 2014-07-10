@@ -457,6 +457,7 @@ A single User object with all its details
 #Group NuTasks
 
 ## NuTask Collection [/nutask]
+Returns all NuTask entities from database.
 ### List of all NuTasks [GET]
 + Response 200 (application/json)
 
@@ -519,12 +520,42 @@ A single User object with all its details
          "ExternalId": "1e28ef3d-f47d-4468-be0f-e82ca1d6543e",
          "LastModified": "2014-07-07T12:52:38.537Z"
          }]
+         
+## NuTask  [/nutask?id={ExternalId}&accountId={AccountId}]
+Returns the NuTask entity by its ExternalId.
 
++ Parameters
+    + 'You must specify 'ExternalId' of entity what you want retrieve and 'AccountId' because in database can be entities with same 'ExternalId'
+
+### Retrieve NuTask by externalId [GET]
++ Response 200 (application/json)
+
+         {
+          "Subject": "sample rest",
+          "Body": "created by rest",
+          "StartDate": "2014-02-26T13:00:00Z",
+          "DueDate": "2014-02-28T15:00:00Z",
+          "Reminder": "2014-07-10T13:45:00Z",
+          "Priority": 0,
+          "IsPrivate": true,
+          "Company": "fewf",
+          "Completed": true,
+          "ProjectName": "some project name",
+          "Parents": [],
+          "ExternalId": "2028ef3d-f47d-4468-be0f-e82ca1d6543e",
+          "LastModified": "2014-07-07T12:52:38.537Z"
+         }
+
+## NuTask [/nutask?accountId={InternalId}]
+
++ Parameters
+    + `accountId` You must specify accountId because in database can be entities with same externalId.
+    
 ### Create a NuTask [POST]
 + Request (application/json)
 
         {
-         "Subject": "created by rest",
+         "Subject": "sample rest",
          "Body": "created by rest",
          "StartDate": "2014-02-26T13:00:00Z",
          "DueDate": "2014-02-28T15:00:00Z",
@@ -534,22 +565,8 @@ A single User object with all its details
          "Company": "fewf",
          "Completed": true,
          "ProjectName": "?",
-         "Parents": [{
-                 "Subject": "created by rest",
-                 "Body": "created by rest",
-                 "StartDate": "2014-07-07T14:52:38.537",
-                 "DueDate": "2014-07-07T14:52:38.537",
-                 "Reminder": "2014-07-07T14:52:38.537",
-                 "Priority": 0,
-                 "IsPrivate": true,
-                 "Company": "created by rest",
-                 "Completed": true,
-                 "ProjectName": "created by rest",
-                 "Parents": [],
-                 "ExternalId": "pe28ef3d-f47d-4468-be0f-e82ca1d6543e",
-                 "LastModified": "2014-07-07T14:52:38.537"
-             }],
-         "ExternalId": "pe28ef3d-f47d-4468-be0f-e82ca1d6543e",
+         "Parents": [],
+         "ExternalId": "2028ef3d-f47d-4468-be0f-e82ca1d6543e",
          "LastModified": "2014-07-07T12:52:38.537Z"
          }
 
@@ -557,7 +574,7 @@ A single User object with all its details
 + Response 201 (application/json)
         
         {
-         "Subject": "created by rest",
+         "Subject": "sample rest",
          "Body": "created by rest",
          "StartDate": "2014-02-26T13:00:00Z",
          "DueDate": "2014-02-28T15:00:00Z",
@@ -567,22 +584,8 @@ A single User object with all its details
          "Company": "fewf",
          "Completed": true,
          "ProjectName": "?",
-         "Parents": [{
-                 "Subject": "created by rest",
-                 "Body": "created by rest",
-                 "StartDate": "2014-07-07T14:52:38.537",
-                 "DueDate": "2014-07-07T14:52:38.537",
-                 "Reminder": "2014-07-07T14:52:38.537",
-                 "Priority": 0,
-                 "IsPrivate": true,
-                 "Company": "created by rest",
-                 "Completed": true,
-                 "ProjectName": "created by rest",
-                 "Parents": [],
-                 "ExternalId": "pe28ef3d-f47d-4468-be0f-e82ca1d6543e",
-                 "LastModified": "2014-07-07T14:52:38.537"
-                 }],
-         "ExternalId": "1028ef3d-f47d-4468-be0f-e82ca1d6543e",
+         "Parents": [],
+         "ExternalId": "2028ef3d-f47d-4468-be0f-e82ca1d6543e",
          "LastModified": "2014-07-07T12:52:38.537Z"
          }
 
