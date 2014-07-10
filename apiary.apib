@@ -521,11 +521,12 @@ Returns all NuTask entities from database.
          "LastModified": "2014-07-07T12:52:38.537Z"
          }]
          
-## NuTask  [/nutask?id={ExternalId}&accountId={AccountId}]
+## NuTask  [/nutask{?id,accountId}]
 Returns the NuTask entity by its ExternalId.
 
 + Parameters
-    + 'You must specify 'ExternalId' of entity what you want retrieve and 'AccountId' because in database can be entities with same 'ExternalId'
+    + id (required, string) ... This parameter is ExternalId of entity (NuTask).
+    + accountId (required, string) ... Entity belongs to account. This parameter is important because in database can be more entities with same ExternalId. 
 
 ### Retrieve NuTask by externalId [GET]
 + Response 200 (application/json)
