@@ -765,6 +765,11 @@ Returns contact by its ID.
                "ExternalId": "MyId123456789",
                "LastModified": "2014-07-11T07:27:17Z"
             }
+            
+### Delete NuTask [DELETE]
+No returns value. Deletes entity.
+
+ + Response 204
 
 ## Contact [/nucontact{?accountId}]
 
@@ -909,3 +914,196 @@ No return value.
 
 
 + Response 200
+
+
+#Group Event
+
+## Event Collection [/nuevent]
+
+### List of all events [GET]
+Returns collection of contacts.
+
++ Response 200 (application/json)
+
+        [
+              {
+              "Location": "MyLocation",
+              "Content": "MyContent",
+              "Title": "MyTitle",
+              "DateTo": "2014-07-11T08:32:14.617Z",
+              "DateFrom": "2014-07-11T07:32:14.617Z",
+              "Reminder": "2014-07-11T07:22:14.617Z",
+              "Notification": false,
+              "IsPrivate": false,
+              "NuEventAddress":       {
+                 "Street": "MyStreet",
+                 "City": "MyCity",
+                 "Room": "MyRoom"
+              },
+              "Priority": 0,
+              "Company": "ForOtherCompany",
+              "ContactPerson":       {
+                 "Name": null,
+                 "Email": "my@email.com"
+              },
+              "ExternalId": "EventId",
+              "LastModified": "2014-07-11T07:32:14.617Z"
+           },
+              {
+              "Location": "002MyLocation",
+              "Content": "002MyContent",
+              "Title": "002MyTitle",
+              "DateTo": "2014-07-11T08:32:14.617Z",
+              "DateFrom": "2014-07-11T07:32:14.617Z",
+              "Reminder": "2014-07-11T07:22:14.617Z",
+              "Notification": false,
+              "IsPrivate": false,
+              "NuEventAddress":       {
+                 "Street": "002MyStreet",
+                 "City": "002MyCity",
+                 "Room": "002MyRoom"
+              },
+              "Priority": 0,
+              "Company": "002ForOtherCompany",
+              "ContactPerson":       {
+                 "Name": null,
+                 "Email": "002my@email.com"
+              },
+              "ExternalId": "EventId002",
+              "LastModified": "2014-07-11T07:32:14.617Z"
+           }
+        ]
+
+## Event [/nuevent{?id,accountId}]
+
++ Parameters
+    + id (required, string) ... This parameter is ExternalId of contact.
+    + accountId (required, string) ... Entity belongs to account. This parameter is important because in database can be more entities with same ID. 
+
+### Get Event by ID [GET]
+Returns event by its ID.
+
++ Response 200 (application/json)
+
+            {
+               "Location": "MyLocation",
+               "Content": "MyContent",
+               "Title": "MyTitle",
+               "DateTo": "2014-07-11T08:32:14.617Z",
+               "DateFrom": "2014-07-11T07:32:14.617Z",
+               "Reminder": "2014-07-11T07:22:14.617Z",
+               "Notification": false,
+               "IsPrivate": false,
+               "NuEventAddress":    {
+                  "Street": "MyStreet",
+                  "City": "MyCity",
+                  "Room": "MyRoom"
+               },
+               "Priority": 0,
+               "Company": "ForOtherCompany",
+               "ContactPerson":    {
+                  "Name": null,
+                  "Email": "my@email.com"
+               },
+               "ExternalId": "EventId",
+               "LastModified": "2014-07-11T07:32:14.617Z"
+            }
+
+### Delete Event [DELETE]
+No returns value. Deletes entity.
+
+ + Response 204
+
+## Contact [/nuevent{?accountId}]
+
++ Parameters
+    + accountId (required, string) ... You must specify accountId because in database can be entities with same externalId.
+   
+
+### Create a event [POST]
+Creating event.
+
++ Request (application/json)
+
+            {
+                  "Location": "003MyLocation",
+                  "Content": "003MyContent",
+                  "Title": "003MyTitle",
+                  "DateTo": "2014-07-11T08:32:14.617Z",
+                  "DateFrom": "2014-07-11T07:32:14.617Z",
+                  "Reminder": "2014-07-11T07:22:14.617Z",
+                  "Notification": false,
+                  "IsPrivate": false,
+                  "NuEventAddress":       {
+                     "Street": "003MyStreet",
+                     "City": "003MyCity",
+                     "Room": "003MyRoom"
+                  },
+                  "Priority": 0,
+                  "Company": "003ForOtherCompany",
+                  "ContactPerson":       {
+                     "Name": null,
+                     "Email": "003my@email.com"
+                  },
+                  "ExternalId": "EventId003",
+                  "LastModified": "2014-07-11T07:32:14.617Z"
+               }
+
+
++ Response 201 (application/json)
+
+                {
+                   "Location": "003MyLocation",
+                   "Content": "003MyContent",
+                   "Title": "003MyTitle",
+                   "DateTo": "2014-07-11T08:32:14.617Z",
+                   "DateFrom": "2014-07-11T07:32:14.617Z",
+                   "Reminder": "2014-07-11T07:22:14.617Z",
+                   "Notification": false,
+                   "IsPrivate": false,
+                   "NuEventAddress":    {
+                      "Street": "003MyStreet",
+                      "City": "003MyCity",
+                      "Room": "003MyRoom"
+                   },
+                   "Priority": 0,
+                   "Company": "003ForOtherCompany",
+                   "ContactPerson":    {
+                      "Name": null,
+                      "Email": "003my@email.com"
+                   },
+                   "ExternalId": "EventId003",
+                   "LastModified": "2014-07-11T07:32:14.617Z"
+                }
+
+### Update event [PUT]
+No return value.
+
++ Request (application/json)
+
+                {
+                      "Location": "UPDATED_003MyLocation",
+                      "Content": "UPDATED_003MyContent",
+                      "Title": "UPDATED_003MyTitle",
+                      "DateTo": "2014-07-11T08:32:14.617Z",
+                      "DateFrom": "2014-07-11T07:32:14.617Z",
+                      "Reminder": "2014-07-11T07:22:14.617Z",
+                      "Notification": false,
+                      "IsPrivate": false,
+                      "NuEventAddress":       {
+                         "Street": "UPDATED_003MyStreet",
+                         "City": "UPDATED_003MyCity",
+                         "Room": "UPDATED_003MyRoom"
+                      },
+                      "Priority": 0,
+                      "Company": "UPDATED_003ForOtherCompany",
+                      "ContactPerson":       {
+                         "Name": null,
+                         "Email": "UPDATED_003my@email.com"
+                      },
+                      "ExternalId": "EventId003",
+                      "LastModified": "2014-07-11T07:32:14.617Z"
+                   }
+
++ Response 200
+
