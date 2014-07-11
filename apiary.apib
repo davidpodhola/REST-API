@@ -622,8 +622,9 @@ Creating NuTask.
          "LastModified": "2014-07-07T12:52:38.537Z"
          }
 
+#Group Contacts
 
-## Contact [/nucontact]
+## Contact Collection [/nucontact]
 
 ### Contact Collection [GET]
 Returns collection of contacts.
@@ -711,6 +712,7 @@ Returns collection of contacts.
               "LastModified": "2014-07-11T07:27:17Z"
            }
         ]
+  
 
 ## Contact [/nucontact{?id,accountId}]
 
@@ -764,4 +766,99 @@ Returns contact by its ID.
                "LastModified": "2014-07-11T07:27:17Z"
             }
 
+ 
+## Contact [/nucontact{?accountId}]
 
++ Parameters
+    + accountId (required, string) ... You must specify accountId because in database can be entities with same externalId.
+   
+
+### Create a contact [POST]
+Creating contact.
+
++ Request (application/json)
+
+            {
+               "Name":    {
+                  "FirstName": "",
+                  "Surname": "Jimmy Joseph",
+                  "MiddleName": "",
+                  "Nickname": "",
+                  "TitleBefore": "",
+                  "TitleFor": ""
+               },
+               "PhoneNumbers":    {
+                  "Home": {"Number": "123 123 123"},
+                  "Work": {"Number": "123 123 123"},
+                  "CellPhone": {"Number": "123 123 123"}
+               },
+               "EmailAddresses":    {
+                  "Home": {"Address": "home@email.com"},
+                  "Work": {"Address": "work@email.com"}
+               },
+               "Address": "Prague, Malostranska 1",
+               "PhysicalAddresses":    {
+                  "Home":       {
+                     "Street": "Prague, Malostranska 1",
+                     "City": "Prague",
+                     "Country": "Czech Republic",
+                     "State": "Czech Republic",
+                     "PostalCode": "100 02"
+                  },
+                  "Work":       {
+                     "Street": "Prague, Staromestska 1",
+                     "City": "Prague",
+                     "Country": "Czech Republic",
+                     "State": "Czech Republic",
+                     "PostalCode": "100  03"
+                  }
+               },
+               "JobPosition": "Developer",
+               "Company": "My Company ABC",
+               "ExternalId": "MyId987654321",
+               "LastModified": "2014-07-11T07:27:17Z"
+            }
+
++ Response 201 (application/json)
+
+            {
+               "Name":    {
+                  "FirstName": "",
+                  "Surname": "Jimmy Joseph",
+                  "MiddleName": "",
+                  "Nickname": "",
+                  "TitleBefore": "",
+                  "TitleFor": ""
+               },
+               "PhoneNumbers":    {
+                  "Home": {"Number": "123 123 123"},
+                  "Work": {"Number": "123 123 123"},
+                  "CellPhone": {"Number": "123 123 123"}
+               },
+               "EmailAddresses":    {
+                  "Home": {"Address": "home@email.com"},
+                  "Work": {"Address": "work@email.com"}
+               },
+               "Address": "Prague, Malostranska 1",
+               "PhysicalAddresses":    {
+                  "Home":       {
+                     "Street": "Prague, Malostranska 1",
+                     "City": "Prague",
+                     "Country": "Czech Republic",
+                     "State": "Czech Republic",
+                     "PostalCode": "100 02"
+                  },
+                  "Work":       {
+                     "Street": "Prague, Staromestska 1",
+                     "City": "Prague",
+                     "Country": "Czech Republic",
+                     "State": "Czech Republic",
+                     "PostalCode": "100  03"
+                  }
+               },
+               "JobPosition": "Developer",
+               "Company": "My Company ABC",
+               "ExternalId": "MyId987654321",
+               "LastModified": "2014-07-11T07:27:17Z"
+            }
+        
