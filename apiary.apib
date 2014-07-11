@@ -623,7 +623,94 @@ Creating NuTask.
          }
 
 
+## Contact [/nucontact]
 
+### Contact Collection [GET]
+Returns collection of contacts.
++ Response 200 (application/json)
+
+        [
+              {
+              "Name":       {
+                 "FirstName": "",
+                 "Surname": "FullName",
+                 "MiddleName": "",
+                 "Nickname": "",
+                 "TitleBefore": "",
+                 "TitleFor": ""
+              },
+              "PhoneNumbers":       {
+                 "Home": {"Number": "123 123 123"},
+                 "Work": {"Number": "123 123 123"},
+                 "CellPhone": {"Number": "123 123 123"}
+              },
+              "EmailAddresses":       {
+                 "Home": {"Address": "home@email.com"},
+                 "Work": {"Address": "work@email.com"}
+              },
+              "Address": "Prague, Malostranska 1",
+              "PhysicalAddresses":       {
+                 "Home":          {
+                    "Street": "Prague, Malostranska 1",
+                    "City": "Prague",
+                    "Country": "Czech Republic",
+                    "State": "Czech Republic",
+                    "PostalCode": "100 02"
+                 },
+                 "Work":          {
+                    "Street": "Prague, Staromestska 1",
+                    "City": "Prague",
+                    "Country": "Czech Republic",
+                    "State": "Czech Republic",
+                    "PostalCode": "100  03"
+                 }
+              },
+              "JobPosition": "Developer",
+              "Company": "My Company ABC",
+              "ExternalId": "mojeIdecko9848",
+              "LastModified": "2014-07-11T07:27:17Z"
+           },
+              {
+              "Name":       {
+                 "FirstName": "",
+                 "Surname": "Peter Smith",
+                 "MiddleName": "",
+                 "Nickname": "",
+                 "TitleBefore": "",
+                 "TitleFor": ""
+              },
+              "PhoneNumbers":       {
+                 "Home": {"Number": "123 123 123"},
+                 "Work": {"Number": "123 123 123"},
+                 "CellPhone": {"Number": "123 123 123"}
+              },
+              "EmailAddresses":       {
+                 "Home": {"Address": "home@email.com"},
+                 "Work": {"Address": "work@email.com"}
+              },
+              "Address": "Prague, Malostranska 1",
+              "PhysicalAddresses":       {
+                 "Home":          {
+                    "Street": "Prague, Malostranska 1",
+                    "City": "Prague",
+                    "Country": "Czech Republic",
+                    "State": "Czech Republic",
+                    "PostalCode": "100 02"
+                 },
+                 "Work":          {
+                    "Street": "Prague, Staromestska 1",
+                    "City": "Prague",
+                    "Country": "Czech Republic",
+                    "State": "Czech Republic",
+                    "PostalCode": "100  03"
+                 }
+              },
+              "JobPosition": "Developer",
+              "Company": "My Company ABC",
+              "ExternalId": "MyId123456789",
+              "LastModified": "2014-07-11T07:27:17Z"
+           }
+        ]
 
 
 
