@@ -766,7 +766,6 @@ Returns contact by its ID.
                "LastModified": "2014-07-11T07:27:17Z"
             }
 
- 
 ## Contact [/nucontact{?accountId}]
 
 + Parameters
@@ -861,4 +860,52 @@ Creating contact.
                "ExternalId": "MyId987654321",
                "LastModified": "2014-07-11T07:27:17Z"
             }
-        
+
+### Update contact [PUT]
+No return value.
+
++ Request (application/json)
+
+                {
+           "Name":    {
+              "FirstName": "",
+              "Surname": "Jimmy002 Joseph002",
+              "MiddleName": "",
+              "Nickname": "",
+              "TitleBefore": "",
+              "TitleFor": ""
+           },
+           "PhoneNumbers":    {
+              "Home": {"Number": "123 123 123"},
+              "Work": {"Number": "123 123 123"},
+              "CellPhone": {"Number": "123 123 123"}
+           },
+           "EmailAddresses":    {
+              "Home": {"Address": "home@email.com002"},
+              "Work": {"Address": "work@email.com002"}
+           },
+           "Address": "002Prague, Malostranska 1",
+           "PhysicalAddresses":    {
+              "Home":       {
+                 "Street": "002Prague, Malostranska 1",
+                 "City": "Prague",
+                 "Country": "Czech Republic",
+                 "State": "Czech Republic",
+                 "PostalCode": "100 02"
+              },
+              "Work":       {
+                 "Street": "Prague, Staromestska 1",
+                 "City": "Prague",
+                 "Country": "Czech Republic",
+                 "State": "Czech Republic",
+                 "PostalCode": "100  03"
+              }
+           },
+           "JobPosition": "002Developer",
+           "Company": "002My Company ABC",
+           "ExternalId": "MyId987654321",
+           "LastModified": "0022014-10-11T07:27:17Z"
+        }
+
+
++ Response 200
