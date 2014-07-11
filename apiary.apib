@@ -712,5 +712,56 @@ Returns collection of contacts.
            }
         ]
 
+## Contact [/nucontact{?id,accountId}]
+
++ Parameters
+    + id (required, string) ... This parameter is ExternalId of contact.
+    + accountId (required, string) ... Entity belongs to account. This parameter is important because in database can be more entities with same ID. 
+
+### Get NuTask by ID [GET]
+Returns contact by its ID.
+
++ Response 200 (application/json)
+
+            {
+               "Name":    {
+                  "FirstName": "",
+                  "Surname": "Peter Smith",
+                  "MiddleName": "",
+                  "Nickname": "",
+                  "TitleBefore": "",
+                  "TitleFor": ""
+               },
+               "PhoneNumbers":    {
+                  "Home": {"Number": "123 123 123"},
+                  "Work": {"Number": "123 123 123"},
+                  "CellPhone": {"Number": "123 123 123"}
+               },
+               "EmailAddresses":    {
+                  "Home": {"Address": "home@email.com"},
+                  "Work": {"Address": "work@email.com"}
+               },
+               "Address": "Prague, Malostranska 1",
+               "PhysicalAddresses":    {
+                  "Home":       {
+                     "Street": "Prague, Malostranska 1",
+                     "City": "Prague",
+                     "Country": "Czech Republic",
+                     "State": "Czech Republic",
+                     "PostalCode": "100 02"
+                  },
+                  "Work":       {
+                     "Street": "Prague, Staromestska 1",
+                     "City": "Prague",
+                     "Country": "Czech Republic",
+                     "State": "Czech Republic",
+                     "PostalCode": "100  03"
+                  }
+               },
+               "JobPosition": "Developer",
+               "Company": "My Company ABC",
+               "ExternalId": "MyId123456789",
+               "LastModified": "2014-07-11T07:27:17Z"
+            }
 
 
